@@ -34,16 +34,21 @@ int main(){
             int op;
             cout<< "A palavra que você deseja buscar é em:"<<endl<<"1. PORTUGUÊS;"<<endl<< "2. INGLÊS;"<<endl;
             cin>>op;
-            if (op == 1){
-                //logica de busca
-            };
-            if (op == 2){
-                //logica de busca
-            };
-            if (op < 1 || op > 2){
-                system("clear");
-                cout<<"Valor inválido!"<<endl;
-            };
+                switch (op){
+                    case 1:
+                        system("clear");
+                        //cout<<1;
+                        break;
+                    case 2:
+                        system("clear");
+                       //cout<<2;
+                        break;
+                    default:
+                        system("clear");
+                        cout<< "Valor inválido, o programa fechará"<<endl;
+                        abort();
+
+                }
             break;
 
         case 4:
